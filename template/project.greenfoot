@@ -2,9 +2,9 @@
 class.Assassin.image=Assassin.png
 class.Bullet.image=bullet.png
 class.TraningFacility.image=TrainingFacility.png
-editor.fx.0.height=758
-editor.fx.0.width=652
-editor.fx.0.x=634
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
 editor.fx.0.y=0
 height=766
 package.numDependencies=0
