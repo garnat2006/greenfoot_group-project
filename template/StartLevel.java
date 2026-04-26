@@ -1,0 +1,31 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class StartLevel here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class StartLevel extends Button
+{
+    /**
+     * Act - do whatever the LevelOne wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act()
+    {
+        super.setImage("StartLevel.png");
+        StartLevel();
+    }
+    
+    public void StartLevel()
+    {
+        if (Greenfoot.mouseClicked(this))
+        {
+            Greenfoot.setWorld(new Level1());
+            
+            Level1 Levels = (Level1) getWorld();
+            Levels.stopped();
+        }
+    }
+}

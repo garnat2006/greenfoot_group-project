@@ -6,13 +6,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Guard1 extends Enemy
+public class Guard3 extends Enemy
 {
-    private int health = 10;
+    private int health = 50;
     private int moveSpeed = 1;
     private int turnTimer = 0;
 
-    public Guard1()
+    public Guard3()
     {
         GreenfootImage img = getImage();
         img.scale(img.getWidth() / 2, img.getHeight() / 2);
@@ -65,6 +65,4 @@ public class Guard1 extends Enemy
             }
         }
     }
-    
-    
 }

@@ -20,6 +20,7 @@ public class Assassin extends Actor
     {
         aimWithMouse();
         moveWithWASD();
+        
     }
 
     public void aimWithMouse()
@@ -61,7 +62,7 @@ public class Assassin extends Actor
 
     public void moveWithWASD()
     {
-        int speed = 1;
+        int speed = 2;
         int oldX = getX();
         int oldY = getY();
     
@@ -86,4 +87,5 @@ public class Assassin extends Actor
 
         }
     }
+    
 }

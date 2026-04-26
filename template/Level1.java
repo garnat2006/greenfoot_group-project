@@ -1,28 +1,29 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class TraningFacility here.
+ * Write a description of class Level1 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class TrainingFacility extends Menu
+public class Level1 extends Levels
 {
     private long lastFrameTimeMS;
     private double timeStepDuration;
     
     /**
-     * Constructor for objects of class TraningFacility.
+     * Constructor for objects of class Level1.
      * 
      */
-    public TrainingFacility()
-    {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-
+    public Level1()
+    {
+        
         lastFrameTimeMS = System.currentTimeMillis();
         timeStepDuration = 1.0 / 60.0;
         prepare();
+        
     }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -31,12 +32,14 @@ public class TrainingFacility extends Menu
     {
         Assassin assassin = new Assassin();
         addObject(assassin,400,200);
-        
-        StartLevel StartLevel = new StartLevel();
-        addObject(StartLevel, 400, 450);
-        
-        VanierLogo VanierLogo = new VanierLogo();
-        addObject(VanierLogo, 675, 600);
+
+        assassin.setLocation(453,580);
+        Guard1 guard1 = new Guard1();
+        addObject(guard1,90,514);
+        Guard2 guard2 = new Guard2();
+        addObject(guard2,835,96);
+        Guard3 guard3 = new Guard3();
+        addObject(guard3,188,105);
     }
     
     public void started()
@@ -54,6 +57,4 @@ public class TrainingFacility extends Menu
     {
         return timeStepDuration;
     }
-    
-    
 }

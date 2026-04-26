@@ -12,7 +12,7 @@ public class Bullet extends Actor
     private Vector2D velocity;
     private Vector2D acceleration;
     
-    private static final double GRAVITY = 9.8 * 200; // 200 pixels is 1 meter
+    private static final double GRAVITY = 9.8 * 200;
     
     public Bullet()
     {
@@ -39,14 +39,25 @@ public class Bullet extends Actor
     public void updatePhysics()
     {
         // Initial position
+        
         if (position == null)
         {
             position = new Point2D(getX(), getY());
         }
     
-        TrainingFacility world = (TrainingFacility)getWorld();
-        double dt = world.getTimeStepDuration();
-
+        double dt = 1.0 / 60.0;
+    
+        if (getWorld() instanceof TrainingFacility)
+        {
+            TrainingFacility world = (TrainingFacility)getWorld();
+            dt = world.getTimeStepDuration();
+        }
+        else if (getWorld() instanceof Level1)
+        {
+            Level1 world = (Level1)getWorld();
+            dt = world.getTimeStepDuration();
+        }
+    
         Vector2D velocityVariation = Vector2D.multiply(acceleration, dt);
         velocity = Vector2D.add(velocity, velocityVariation);
     
@@ -54,5 +65,6 @@ public class Bullet extends Actor
         position.add(positionVariation);
     
         setLocation((int) position.getX(), (int) position.getY());
+        }
     }
-}
+
