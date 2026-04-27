@@ -51,10 +51,18 @@ public class Level1 extends Levels
     {
         timeStepDuration = (System.currentTimeMillis() - lastFrameTimeMS) / 1000.0;
         lastFrameTimeMS = System.currentTimeMillis();
+        
+        checkWin();
     }
 
     public double getTimeStepDuration()
     {
         return timeStepDuration;
+    }
+    
+    public void checkWin(){
+        if (getObjects(Guard1.class).isEmpty() && getObjects(Guard2.class).isEmpty() && getObjects(Guard3.class).isEmpty()){
+            Greenfoot.setWorld(new YouWin());
+        }
     }
 }

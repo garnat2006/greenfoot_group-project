@@ -29,9 +29,6 @@ public class Replay extends Button
         if (Greenfoot.mouseClicked(this))
         {
             Greenfoot.setWorld(new Level1());
-            
-            Level1 Levels = (Level1) getWorld();
-            Levels.stopped();
         }
     }
 }

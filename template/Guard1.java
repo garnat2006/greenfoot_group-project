@@ -47,7 +47,6 @@ public class Guard1 extends Enemy
     {
         if (isTouching(Assassin.class))
         {
-            getWorld().removeObject(this);
             Greenfoot.setWorld(new YouLost());
         }
     }
