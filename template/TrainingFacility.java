@@ -35,8 +35,6 @@ public class TrainingFacility extends Menu
         StartLevel StartLevel = new StartLevel();
         addObject(StartLevel, 400, 450);
         
-        VanierLogo VanierLogo = new VanierLogo();
-        addObject(VanierLogo, 675, 600);
     }
     
     public void started()

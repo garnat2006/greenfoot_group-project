@@ -1,14 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Replay here.
+ * Write a description of class StartGame here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Replay extends Button
+public class StartGame extends Button
 {
-    public Replay()
+    /**
+     * Act - do whatever the StartGame wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public StartGame()
     {
         GreenfootImage img = getImage();
         img.scale(img.getWidth() / 2, img.getHeight() / 2); 
@@ -19,7 +23,7 @@ public class Replay extends Button
     {
         if (Greenfoot.mouseClicked(this))
         {
-            Greenfoot.setWorld(new Level1());
+            Greenfoot.setWorld(new TrainingFacility());
         }
     }
 }

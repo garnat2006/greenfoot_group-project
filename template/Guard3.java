@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Guard3 extends Enemy
 {
-    private int health = 50;
+    private int health = 40;
     private int moveSpeed = 1;
     private int turnTimer = 0;
 
@@ -45,10 +45,12 @@ public class Guard3 extends Enemy
 
     public void checkAssassinTouch()
     {
-        if (isTouching(Assassin.class))
+        Assassin a = (Assassin)getOneIntersectingObject(Assassin.class);
+    
+        if (a != null)
         {
-            getWorld().removeObject(this);
             Greenfoot.setWorld(new YouLost());
+            return;
         }
     }
 

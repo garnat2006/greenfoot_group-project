@@ -45,10 +45,12 @@ public class Guard1 extends Enemy
 
     public void checkAssassinTouch()
     {
-        if (isTouching(Assassin.class))
+        Assassin a = (Assassin)getOneIntersectingObject(Assassin.class);
+    
+        if (a != null)
         {
-            getWorld().removeObject(this);
             Greenfoot.setWorld(new YouLost());
+            return;
         }
     }
 

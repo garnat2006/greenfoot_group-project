@@ -10,7 +10,7 @@ public class YouLost extends Menu
 {
     public YouLost()
     {
-        super();  // if Menu has a no‑arg constructor
+        super(); 
 
         setBackgroundScaled();
         prepare();
@@ -20,7 +20,7 @@ public class YouLost extends Menu
     {
         GreenfootImage bg = new GreenfootImage("YouLost.png");
 
-        bg.scale(getWidth(), getHeight());   // fill the whole world
+        bg.scale(getWidth(), getHeight());   
         setBackground(bg);
     }
 
