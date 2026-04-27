@@ -32,8 +32,8 @@ public class TrainingFacility extends Menu
         Assassin assassin = new Assassin();
         addObject(assassin,400,200);
         
-        StartLevel StartLevel = new StartLevel();
-        addObject(StartLevel, 400, 450);
+        StartLevel startLevel = new StartLevel();
+        addObject(startLevel, 400, 450);
         
     }
     

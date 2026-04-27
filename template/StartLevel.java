@@ -15,13 +15,7 @@ public class StartLevel extends Button
     public void act()
     {
         super.setImage("StartLevel.png");
-        StartLevel();
-    }
-    
-    public void StartLevel()
-    {
-        if (Greenfoot.mouseClicked(this))
-        {
+        if (Greenfoot.mouseClicked(this)) {
             Greenfoot.setWorld(new Level1());
         }
     }
