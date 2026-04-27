@@ -26,7 +26,6 @@ public class YouWin extends Menu
     }
     
     private void prepare(){
-        NextLevel nextLevel = new NextLevel();
-        addObject(nextLevel,450,450);
+        
     }
 }
