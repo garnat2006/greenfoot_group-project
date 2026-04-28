@@ -44,6 +44,7 @@ public class Assassin extends Actor
                 Bullet ball = new Bullet();
                 ball.setVelocity(bulletToMouse);
                 getWorld().addObject(ball, getX(), getY());
+                SoundManager.shoot();
             
             }
         }
