@@ -49,6 +49,7 @@ public class Guard3 extends Enemy
     
         if (a != null)
         {
+            SoundManager.lose();
             Greenfoot.setWorld(new YouLost());
             return;
         }

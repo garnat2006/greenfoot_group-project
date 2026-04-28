@@ -20,6 +20,7 @@ public class Level1 extends Levels
     {
         lastFrameTimeMS = System.currentTimeMillis();
         timeStepDuration = 1.0 / 60.0;
+        SoundManager.playBackgroundMusic();
         prepare();
     }
     
@@ -63,6 +64,7 @@ public class Level1 extends Levels
     {
         if (!nextButtonSpawned && getObjects(Enemy.class).isEmpty())
         {
+            SoundManager.win();
             Enter button = new Enter();
             addObject(button, getWidth() / 4, getHeight() / 4);
             nextButtonSpawned = true;
