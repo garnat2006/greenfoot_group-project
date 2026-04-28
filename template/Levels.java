@@ -1,21 +1,31 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
-/**
- * Write a description of class Levels here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Levels extends World
 {
+    protected long lastFrameTimeMS;
+    protected double timeStepDuration;
 
-    /**
-     * Constructor for objects of class Levels.
-     * 
-     */
-    public Levels()
+    public Levels(int width, int height)
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(900, 600, 1); 
+        super(width, height, 1, false);
+
+        lastFrameTimeMS = System.currentTimeMillis();
+        timeStepDuration = 1.0 / 60.0;
+    }
+
+    public void started()
+    {
+        lastFrameTimeMS = System.currentTimeMillis();
+    }
+
+    public void act()
+    {
+        timeStepDuration = (System.currentTimeMillis() - lastFrameTimeMS) / 1000.0;
+        lastFrameTimeMS = System.currentTimeMillis();
+    }
+
+    public double getTimeStepDuration()
+    {
+        return timeStepDuration;
     }
 }

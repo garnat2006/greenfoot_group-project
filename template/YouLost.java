@@ -10,7 +10,7 @@ public class YouLost extends Menu
 {
     public YouLost()
     {
-        super(); 
+        super(800,450); 
 
         setBackgroundScaled();
         prepare();

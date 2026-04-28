@@ -15,7 +15,7 @@ public class StartGame extends Button
     public StartGame()
     {
         GreenfootImage img = getImage();
-        img.scale(img.getWidth() / 2, img.getHeight() / 2); 
+        img.scale(img.getWidth() / 4, img.getHeight() / 4); 
         setImage(img);
     }
 
