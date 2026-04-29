@@ -30,8 +30,8 @@ public class Level1 extends Levels
 
     public void act()
     {
-        super.act();          // keeps timing from Levels
-        checkLevelComplete(); // this now exists
+        super.act();          
+        checkLevelComplete(); 
     }
 
     private void checkLevelComplete()

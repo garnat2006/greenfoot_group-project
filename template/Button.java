@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*; 
 
 /**
  * Write a description of class Button here.
@@ -14,6 +14,6 @@ public class Button extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        
     }
 }

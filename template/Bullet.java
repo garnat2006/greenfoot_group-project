@@ -1,5 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import greenfoot.*;  
 /**
  * Write a description of class Bullet here.
  * 
@@ -38,7 +37,6 @@ public class Bullet extends Actor
     
     public void updatePhysics()
     {
-        // Initial position
         
         if (position == null)
         {

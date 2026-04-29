@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*; 
 
 /**
  * Write a description of class TraningFacility here.
@@ -17,7 +17,6 @@ public class TrainingFacility extends Menu
      */
     public TrainingFacility()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super (800,600);
     
         lastFrameTimeMS = System.currentTimeMillis();

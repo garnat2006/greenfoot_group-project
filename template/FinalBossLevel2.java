@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  
 
 /**
  * Write a description of class FinalBossLevel2 here.
@@ -31,7 +31,7 @@ public class FinalBossLevel2 extends Levels
 
     public void act()
     {
-        super.act();       // keep timing logic from Levels
+        super.act();       
         checkLevelComplete();
     }
     
