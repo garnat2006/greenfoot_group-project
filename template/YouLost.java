@@ -10,7 +10,10 @@ public class YouLost extends Menu
 {
     public YouLost()
     {
-        super(800,450); 
+        super(800, 450); 
+
+        SoundManager.stopBackgroundMusic();
+        SoundManager.lose();   // use this only if you made a lose sound method
 
         setBackgroundScaled();
         prepare();
@@ -19,7 +22,6 @@ public class YouLost extends Menu
     private void setBackgroundScaled()
     {
         GreenfootImage bg = new GreenfootImage("YouLost.png");
-
         bg.scale(getWidth(), getHeight());   
         setBackground(bg);
     }
@@ -31,16 +33,9 @@ public class YouLost extends Menu
     private void prepare()
     {
         Replay replay = new Replay();
-        addObject(replay,310,491);
-        replay.setLocation(346,505);
-        replay.setLocation(397,490);
+        addObject(replay, 397, 490);
+
         Replay replay2 = new Replay();
-        addObject(replay2,422,350);
-        replay2.setLocation(436,350);
-        replay2.setLocation(551,352);
-        replay2.setLocation(452,345);
-        replay2.setLocation(435,342);
-        replay2.setLocation(468,352);
-        replay2.setLocation(439,352);
+        addObject(replay2, 439, 352);
     }
 }

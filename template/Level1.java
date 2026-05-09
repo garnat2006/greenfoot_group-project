@@ -6,8 +6,9 @@ public class Level1 extends Levels
 
     public Level1()
     {
-        super(900, 600);   // Level1 size
+        super(900, 600);
         prepare();
+        SoundManager.playBackgroundMusic();
     }
 
     private void prepare()
@@ -30,8 +31,9 @@ public class Level1 extends Levels
 
     public void act()
     {
-        super.act();          
-        checkLevelComplete(); 
+        super.act();
+        SoundManager.playBackgroundMusic();
+        checkLevelComplete();
     }
 
     private void checkLevelComplete()

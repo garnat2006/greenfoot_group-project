@@ -8,24 +8,22 @@ import greenfoot.*;
  */
 public class SplashMenu extends Menu
 {
-
     /**
      * Constructor for objects of class SplashMenu.
      * 
      */
     public SplashMenu()
     {
-        super (800,500);
+        super(800, 500);
         
+        SoundManager.playBackgroundMusic();
         setBackgroundScaled();
         prepare();
     }
 
     private void setBackgroundScaled()
     {
-        
         GreenfootImage bg = new GreenfootImage("SplashMenu.png");
-
         bg.scale(getWidth(), getHeight());   
         setBackground(bg);
     }
@@ -37,18 +35,17 @@ public class SplashMenu extends Menu
     private void prepare()
     {
         StartGame startGame = new StartGame();
-        addObject(startGame,418,502);
-        startGame.setLocation(392,413);
+        addObject(startGame, 401, 385);
+
         VanierLogo vanierLogo = new VanierLogo();
-        addObject(vanierLogo,633,541);
-        vanierLogo.setLocation(702,576);
-        vanierLogo.setLocation(693,575);
-        startGame.setLocation(401,385);
+        addObject(vanierLogo, 693, 575);
+
         VanierLogo vanierLogo2 = new VanierLogo();
-        addObject(vanierLogo2,736,444);
-        vanierLogo2.setLocation(684,456);
-        VanierLogo vanierLogo3 = new VanierLogo();
-        addObject(vanierLogo3,688,171);
-        removeObject(vanierLogo3);
+        addObject(vanierLogo2, 684, 456);
+    }
+
+    public void started()
+    {
+        SoundManager.playBackgroundMusic();
     }
 }

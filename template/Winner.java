@@ -8,7 +8,6 @@ import greenfoot.*;
  */
 public class Winner extends Menu
 {
-
     /**
      * Constructor for objects of class Winner.
      * 
@@ -16,6 +15,9 @@ public class Winner extends Menu
     public Winner()
     {
         super(800, 450);
+
+        SoundManager.stopBackgroundMusic();
+        SoundManager.win();
 
         GreenfootImage bg = new GreenfootImage("YouWin.png");
         bg.scale(getWidth(), getHeight());
@@ -30,12 +32,9 @@ public class Winner extends Menu
     private void prepare()
     {
         StartGame startGame = new StartGame();
-        addObject(startGame,470,455);
-        startGame.setLocation(457,477);
-        startGame.setLocation(406,566);
-        startGame.setLocation(378,593);
+        addObject(startGame, 378, 593);
+
         StartGame startGame2 = new StartGame();
-        addObject(startGame2,487,342);
-        startGame2.setLocation(395,350);
+        addObject(startGame2, 395, 350);
     }
 }
