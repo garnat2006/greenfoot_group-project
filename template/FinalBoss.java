@@ -8,7 +8,7 @@ import greenfoot.*;   // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class FinalBoss extends Enemy
 {
-    private int health = 100;
+    private int health = 30;
     private int moveSpeed = 1;
     private int turnTimer = 0;
 
