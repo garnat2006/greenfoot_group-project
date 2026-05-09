@@ -2,7 +2,7 @@ import greenfoot.*;
 
 public class SoundManager
 {
-    private static GreenfootSound backgroundMusic = new GreenfootSound("backgroundmusic.mp3");
+    private static GreenfootSound backgroundMusic = new GreenfootSound("backgroundmusic.wav");
     
     public static void playBackgroundMusic()
     {
