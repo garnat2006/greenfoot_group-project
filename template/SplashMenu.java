@@ -15,7 +15,7 @@ public class SplashMenu extends Menu
     public SplashMenu()
     {
         super(800, 500);
-        
+        showText("Assassin Shooter", 400, 200);
         showText(" Nicole , Nathan , Anuj , Zaara ", 400, 450);
         SoundManager.playBackgroundMusic();
         setBackgroundScaled();
